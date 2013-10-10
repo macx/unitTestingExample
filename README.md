@@ -1,6 +1,3 @@
-unitTestingExample
-==================
-
 # Usage
 
 To get tooling:
