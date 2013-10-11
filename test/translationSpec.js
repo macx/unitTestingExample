@@ -3,12 +3,7 @@
 describe('translation system', function() {
 
 	beforeEach(function() {
-		module('myapp', function($translateProvider) {
-			$translateProvider.translations('en', {
-				'FOO': 'Bar'
-			});
-			$translateProvider.preferredLanguage('en');
-		})
+		myappModule({'FOO':'Bar'});
 	});
 
 	it('should translate strings correctly', inject(function($translate) {

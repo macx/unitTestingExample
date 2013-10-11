@@ -19,6 +19,7 @@ module.exports = function(config) {
         'app/lib/angular-translate-loader-static-files.js',
         'app/lib/angular-mocks.js',
         'app/app.js',
+        'test/helpers/*.js',
         'test/*.js'
     ],
 
@@ -47,7 +48,7 @@ module.exports = function(config) {
 
 
     // enable / disable watching file and executing tests whenever any file changes
-    autoWatch: false,
+    autoWatch: true,
 
 
     // Start these browsers, currently available:
@@ -67,6 +68,6 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, it capture browsers, run tests and exit
-    singleRun: true
+    singleRun: false
   });
 };
